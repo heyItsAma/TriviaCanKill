@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Space Shooter Demo</title>
+		<style>
+			canvas {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+
+			}
+			#background {
+				z-index: -2;
+			}
+			#main {
+				z-index: -1;
+			}
+			#ship {
+				z-index: 0;
+			}
+		</style>
+	</head>
+	<body>
+        <canvas id="fallCanvas">
+        Please upgrade your browser to support HTML5.<br/> 
+        One recommendation is to install the latest Chrome or Firefox.
+        </canvas>
+		<!-- The canvas for the panning background -->
+		<canvas id="background" width="360" height="700">
+        Your browser does not support canvas. Please try again with a different browser.
+		</canvas>
+		<!-- The canvas for all enemy ships and bullets -->
+		<canvas id="main" width="360" height="700">
+		</canvas>
+		<!-- The canvas the ship uses (can only move up
+         one forth the screen.) -->
+		<canvas id="ship" width="360" height="700">
+		</canvas>
+		<script src="game.js"></script>
+        <script src="constants.js"></script>
+	    <script src="fall.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <div div id ="myDiv" {background-color: yellow}></div>
+        
+        <audio controls autoplay id = "starwars">
+        <source src="http://www.thesoundarchive.com/starwars/star-wars-theme-song.mp3"
+        type='audio/mp3'>
+        </audio>
+        <!--background audio--> 
+  <style media="screen" type="text/css"> 
+      
+      #starwars{
+          visibility:hidden;
+      }
+  #backgroundaudio { 
+  display: block; 
+  position: fixed; 
+  bottom: -43px; 
+  left: 5px; 
+  -webkit-transition: all 1s ease-in-out; 
+  -moz-transition: all 1s ease-in-out; 
+  -ms-transition: all 1s ease-in-out; 
+  -o-transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out; 
+  } 
+  #backgroundaudio:hover { 
+  bottom: 0; 
+  -webkit-transition: all 1s ease-in-out; 
+  -moz-transition: all 1s ease-in-out; 
+  -ms-transition: all 1s ease-in-out; 
+  -o-transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out; 
+  } 
+  #backgroundaudio audio { 
+  background: #ffffff; 
+  padding: 5px; 
+  display: table-cell; 
+  vertical-align: middle; 
+  height: 43px; 
+  z-index: 9998; 
+  } 
+  #backgroundaudio i { 
+  font-size: 40px; 
+  display: block; 
+  background: #ffffff; 
+  padding: 5px; 
+  width: 50px; 
+  float: none; 
+  margin-bottom: -1px; 
+  z-index: 9999; 
+  } 
+  </style> 
+  <div id="backgroundaudio"> 
+	  <i class="fa fa-volume-up"></i> 
+	  <audio autoplay="" controls="" loop="" preload=""> 
+		  <source src="your_website_url/Sunrise.ogg" type="audio/ogg"></source> 
+		  <source src="your_website_url/Sunrise.mp3" type="audio/mpeg"></source> 
+		  Your browser does not support the audio element. 
+	  </audio> 
+  </div>
+    <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  This is an alert box.
+</div>
+        <a href=etc etc>
+    <div class="layout">
+        <div class="title">
+        
+            <div class="description"></div>
+        </div>
+    </div>
+</a>
+        
+	</body>
+</html>
